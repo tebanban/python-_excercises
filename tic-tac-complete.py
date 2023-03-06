@@ -1,7 +1,11 @@
 def winner(board):
     return row_winner(board) or column_winner(board) or  diagonal_winner(board)
     
-    
+def assert_equal(actual, expected):
+	    if actual == expected:
+	        print("OK")
+	    else:
+	        print(f"Error! {repr(actual)} != {repr(expected)}")    
 
 def winning_line(strings):
     piece = strings[0]
